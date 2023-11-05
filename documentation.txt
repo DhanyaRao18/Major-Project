@@ -1,0 +1,20 @@
+******** To create virtual environment **********
+********* type in cmd in vscode not powershell *****************
+python -m venv myenv
+myenv\Scripts\activate
+********** by default installs numpy n opencv both *******
+pip install opencv-python
+pip install mediapipe
+
+*********** 0 refers accessing first camera *********
+cap = cv2.VideoCapture(0)
+
+******** 'solutions' is a module within the mp library that contains 
+       various pre-built solutions for different computer vision tasks. ************
+********* loading the pre-built hand tracking solution from the mp 
+       library and storing it in the variable 'hands' *************
+hands = mp.solutions.hands
+
+********* Hands() - initialize n create hand tracking model **********
+*********** max_num_hands=1 - model shud detect n track landmarks of single hand **********
+hand_landmark = hands.Hands(max_num_hands=1)
