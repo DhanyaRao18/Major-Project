@@ -1,3 +1,6 @@
+This code is implemented in vscode with python 3.8.10 installed to support libraries
+First need to create vitual environment with below commands and install required libraries
+Virtual environment need to be created and run in command prompt not in terminal or powershell
 ******** To create virtual environment **********
 ********* type in cmd in vscode not powershell *****************
 python -m venv myenv
